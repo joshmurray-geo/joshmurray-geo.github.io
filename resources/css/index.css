@@ -1,0 +1,73 @@
+* {
+  font-family: Courier, Arial, sans-serif;
+}
+
+selector { 
+  cursor: none; 
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+  cursor: auto;
+  overflow: hidden;
+}
+
+h1 {
+  color: SeaGreen;
+}
+
+p, 
+li {
+  font-size: 18px;
+}
+
+canvas {
+	display: block;
+  opacity: 1;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.blob {
+	position: fixed;
+	width: 90%;
+  height: 33%;
+  border-radius: 2px;
+  opacity: 0.8;
+  bottom:  0;
+  left:  5%;
+  font-size: 28px;
+}
+
+.hdrImg {
+  z-index: -1;
+  object-fit: cover;
+  position: absolute;
+  top: -5%;
+  width: 100%;
+}
+
+.hdrImg > img {
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 960) {
+  .hdrImg > img {
+    z-index: 500;
+  }
+
+  .hdrImg {
+    z-index: 500;
+  }
+}
+
+#container {
+	position: relative;
+}
