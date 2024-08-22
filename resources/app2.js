@@ -31,7 +31,7 @@ function hexAdd(x0, y0, yup) {
   // if it's in the picture box draw a hollow hex
   if (x0 > sz && x0 < picX2 && y0 > picY1 && y0 < picY2 && window.innerWidth >= 960) {
     ctx.fillStyle = "rgba(0,0,0,0)";
-    ctx.strokeStyle = "rgba(240,240,240,0.05)";
+    ctx.strokeStyle = "rgba(240,240,240,0)";
     ctx.lineWidth = sz / 20;
   }
   // otherwise, if close enough to cursor fill based on dist
@@ -208,6 +208,9 @@ var ctx = canvas.getContext('2d');
 
 // outer bounds
 var xmax = window.innerWidth;
+if (xmax > 800) {
+  console.log(xmax);
+}
 var ymax = window.innerHeight;
 // start at middle middle
 var xMouse = xmax / 2; // cursor position
@@ -248,5 +251,11 @@ yOG = -sz * 2 * s;
 
 canvas.width = xmax;
 canvas.height = ymax;
-canvasDraw();
-requestAnimationFrame(drawRepeat)
+if (xmax > 1000) {
+  canvasDraw();
+  requestAnimationFrame(drawRepeat)
+  document.body.style.cursor = 'none';
+} else {
+  document.body.style.overflow = "scroll";
+}
+

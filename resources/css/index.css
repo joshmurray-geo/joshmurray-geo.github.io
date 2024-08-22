@@ -19,7 +19,7 @@ h1 {
 
 p, 
 li {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 canvas {
@@ -40,14 +40,15 @@ a {
   opacity: 0.8;
   bottom:  0;
   left:  5%;
-  font-size: 28px;
+  font-size: 18px;
+  overflow:  scroll;
 }
 
 .hdrImg {
   z-index: -1;
   object-fit: cover;
   position: absolute;
-  top: -5%;
+  top: 10%;
   width: 100%;
 }
 
@@ -67,6 +68,18 @@ a {
     z-index: 500;
   }
 }
+
+.hdrBar1 {
+  position: fixed;
+  width: 10%;
+  height: 10%;
+  border-radius: 2px;
+  opacity: 0.8;
+  top:  2.5%;
+  left:  20%;
+  font-size: 24px;
+}
+
 
 #container {
 	position: relative;
