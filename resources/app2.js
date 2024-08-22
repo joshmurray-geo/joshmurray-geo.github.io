@@ -29,7 +29,7 @@ function hexAdd(x0, y0, yup) {
   ydif = Math.abs(y - y0) / (sz*4);
   dif = (xdif * xdif + ydif * ydif);
   // if it's in the picture box draw a hollow hex
-  if (x0 > sz && x0 < picX2 && y0 > picY1 && y0 < picY2 && window.innerWidth >= 960) {
+  if (x0 > sz && x0 < picX2 && y0 > picY1 && y0 < picY2) {
     ctx.fillStyle = "rgba(0,0,0,0)";
     ctx.strokeStyle = "rgba(240,240,240,0)";
     ctx.lineWidth = sz / 20;
@@ -100,7 +100,7 @@ function canvasDraw() {
   picX1 = sz;
   picX2 = xmax - 2 * sz;
   picY1 = ymax * 0.05;
-  picY2 = ymax * 0.5 + sz;
+  picY2 = ymax * 0.4 + sz;
 
   // defines the distance of shaded hexagons
   // ang updates to pseudorandomise the shape of the shaded region
@@ -207,11 +207,9 @@ var canvas = document.querySelector('canvas');
 var ctx = canvas.getContext('2d');
 
 // outer bounds
-var xmax = window.innerWidth;
-if (xmax > 800) {
-  console.log(xmax);
-}
-var ymax = window.innerHeight;
+var xmax = document.documentElement.clientWidth;
+console.log(xmax);
+var ymax = window.document.documentElement.clientHeight;
 // start at middle middle
 var xMouse = xmax / 2; // cursor position
 var yMouse = ymax / 2; // cursor position
@@ -251,7 +249,7 @@ yOG = -sz * 2 * s;
 
 canvas.width = xmax;
 canvas.height = ymax;
-if (xmax > 1000) {
+if (xmax > 600) {
   canvasDraw();
   requestAnimationFrame(drawRepeat)
   document.body.style.cursor = 'none';

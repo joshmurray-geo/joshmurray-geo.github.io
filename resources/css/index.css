@@ -35,10 +35,10 @@ a {
 .blob {
 	position: fixed;
 	width: 90%;
-  height: 33%;
+  height: 40%;
   border-radius: 2px;
   opacity: 0.8;
-  bottom:  0;
+  top:  55%;
   left:  5%;
   font-size: 18px;
   overflow:  scroll;
@@ -48,7 +48,8 @@ a {
   z-index: -1;
   object-fit: cover;
   position: absolute;
-  top: 10%;
+  top: 5%;
+  height: 48%;
   width: 100%;
 }
 
