@@ -20,5 +20,6 @@ jobs:
         run: |
           git config --global user.name 'Joshua Murray'
           git config --global user.email 'joshmurray-geo@users.noreply.github.com'
+          git add -A
           git commit -m "Automated build $GIT_COMMIT"
           git push origin $DEPLOY_BRANCH
