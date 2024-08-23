@@ -18,7 +18,7 @@ jobs:
           compression-level: 0
       - name: commit and push changes
         run: |
-          git add -A
+          git config --global user.name 'Joshua Murray'
+          git config --global user.email 'joshmurray-geo@users.noreply.github.com'
           git commit -m "Automated build $GIT_COMMIT"
           git push origin $DEPLOY_BRANCH
-          cd ..
