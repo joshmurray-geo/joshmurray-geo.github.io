@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Global Lithology Weathering</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <style type="text/css">
+    .map-container{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flex-container{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+/*    .flex-container > div {
+      margin: 10px;
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }*/
+
+    .flex-container > canvas{
+        flex-wrap: wrap;
+    }
+
+
+
+    .lithBar {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .calcBar {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-shrink: 5;
+      font-family: 'Inter';
+      font-size: 2vh;
+      font-weight: 500;
+      margin-bottom: 1vh;
+      flex-grow:  4;
+    }
+
+    .calcBar > div {
+      width:  25%;
+    }
+
+    .lithBar > button {
+      font-family: 'Inter';
+      border: 0px;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      flex: 1 1 100px;
+      margin: 3px;
+      min-height: 3vh;
+      max-height: 6vh;
+      display: inline-flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #calcTemp {
+      font-family: 'Inter';
+      border: 0px;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 500;
+      width:  80%;
+      cursor: pointer;
+    }
+
+    #leave {
+      font-family: 'Inter';
+      border: 0px;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 500;
+      width:  80%;
+      cursor: pointer;
+    }
+
+    #slopeToggle {
+      font-family: 'Inter';
+      border: 0px;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 500;
+      width:  80%;
+      cursor: pointer;
+    }
+
+    button.selected {
+      border: 2px;
+      border-style: solid;
+    }
+
+    button:focus {
+      outline:0;
+    }
+
+    .slider-container {
+      vertical-align: center;
+      display: flex;
+      flex-direction: column;
+      width:  100%;
+      height: 100%;
+     /* justify-content: center;*/
+      align-items: flex-start;
+      text-align: center;
+    }
+
+    .slider-container > div{
+      vertical-align: center;
+      display: flex;
+     /* justify-content: center;*/
+      align-items: center;
+      text-align: center;
+    }
+    
+    .slider {
+      -webkit-appearance: none;
+      align-items: center;
+      width: 80%;
+      height: 15px;
+      background: #d6d3d9;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      margin-top:  0px;
+      margin-bottom: 0px;
+    }
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      background: #e76b74;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 15px;
+      height: 15px;
+      background: #e76b74;
+      cursor: pointer;
+    }
+    .slider-value {
+      height: 25px;
+      font-family: 'Inter';
+    }
+
+  </style>
+</head>
+<body>	
+<div class="flex-container">
+  <div class="calcBar">
+    <div> <button id = "calcTemp"> CALC: CO2 = 280ppm </button> </div>
+    <div><button id = "slopeToggle" value="0"> NO SHADING </button></div>
+    <div> <div class = 'slide-container'>  
+      <div><input type="range" min="50" max="200" value="100" class="slider" id="volcSlider"></div>
+      <div> V = <span id="vout"> %</span> </div>
+    
+    <!-- <p id = "prefix"> Steady state pCO2: </p>
+    <p id = "pco2"> 280 </p> -->
+  </div> </div>
+   <div> <button id = "leave"> HOME </button> </div>
+</div>
+<div class="map-container">
+  <canvas id="mapCanvas" height = 400 width = 800 style="border:0px solid #000000;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+</div>
+<div class="flex-container">
+  <div class = "lithBar">
+  	<button id = "meta" value = 1> METAMORPHIC </button>
+  	<button id = "fels" value = 2> FELSIC </button>
+  	<button id = "int" value = 3> INTERMEDIATE </button>
+  	<button id = "maf" value = 4> MAFIC </button>
+  	<button id = "carb" value = 5> CARBONATE </button>
+  	<button id = "sed" value = 6> SEDIMENT </button>
+  	<button id = "ice" value = 7> ICE </button>
+  </div>
+</div>
+<!-- <form action="/runGeoClim.php" method="get" id="submitForm"> 
+    <input type="hidden" id="lithArray" name="lithArray" value="">
+</form> -->
+
+<script type = "text/javascript" src="worldmap.js"></script>
+
+</body>
+</html>
