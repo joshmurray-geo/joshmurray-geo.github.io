@@ -36,7 +36,6 @@ a {
   color: black;
   background-color: transparent;
   text-decoration: none;
-  cursor:  none;
 }
 
 a:link:hover {
@@ -44,50 +43,28 @@ a:link:hover {
 }
 
 #homeLink {
+  cursor:  none;
   color: #773344;
 }
 
 #sciLink {
+  cursor:  none;
   color: #bebada;
 }
 
 #nsLink {
+  cursor:  none;
   color: #8dd3c7;
 }
 
 #weathLink {
+  cursor:  none;
   color:  #FB8072;
-}
-
-.navLink:link {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-  cursor: none;
-}
-
-.navLink:visited {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.navLink:hover {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.navLink:active {
-  color: black;
-  background-color: transparent;
-  text-decoration: bold;
 }
 
 #cvLink {
   color: black;
   background-color: transparent;
-  cursor:  none;
 }
 
 #cvLink:hover {
