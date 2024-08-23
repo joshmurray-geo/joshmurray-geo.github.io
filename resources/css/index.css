@@ -33,32 +33,67 @@ canvas {
 
 
 a {
+  color: black;
+  background-color: transparent;
   text-decoration: none;
+  cursor:  none;
 }
 
-a:link {
+a:link:hover {
+  text-decoration: underline;
+}
+
+#homeLink {
+  color: #773344;
+}
+
+#sciLink {
+  color: #bebada;
+}
+
+#nsLink {
+  color: #8dd3c7;
+}
+
+#weathLink {
+  color:  #FB8072;
+}
+
+.navLink:link {
   color: black;
   background-color: transparent;
   text-decoration: none;
   cursor: none;
 }
 
-a:visited {
+.navLink:visited {
   color: black;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:hover {
+.navLink:hover {
   color: black;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:active {
+.navLink:active {
   color: black;
   background-color: transparent;
   text-decoration: bold;
+}
+
+#cvLink {
+  color: black;
+  background-color: transparent;
+  cursor:  none;
+}
+
+#cvLink:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 #mainText {
