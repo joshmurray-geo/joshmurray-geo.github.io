@@ -15,3 +15,4 @@ jobs:
         with:
           name: PDF
           path: ./cv.pdf
+          compression-level: 0
