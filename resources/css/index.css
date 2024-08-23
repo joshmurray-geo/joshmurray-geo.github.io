@@ -6,6 +6,10 @@ selector {
   cursor: none; 
 }
 
+span.blockspam {
+  display: none;
+}
+
 body {
 	margin: 0;
 	height: 100vh;
@@ -19,7 +23,7 @@ h1 {
 
 p, 
 li {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 canvas {
@@ -32,6 +36,44 @@ a {
   text-decoration: none;
 }
 
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: bold;
+}
+
+#mainText {
+  position: fixed;
+  width: 90%;
+  height: 10%;
+  border-radius: 2px;
+  opacity: 0.8;
+  bottom:  2%;
+  left:  5%;
+  font-size: 20px;
+  overflow:  scroll;
+  font-weight: bold;
+}
+
 .blob {
 	position: fixed;
 	width: 90%;
@@ -40,7 +82,7 @@ a {
   opacity: 0.8;
   top:  55%;
   left:  5%;
-  font-size: 18px;
+  font-size: 20px;
   overflow:  scroll;
 }
 
@@ -56,6 +98,7 @@ a {
 .hdrImg > img {
   z-index: -1;
   object-fit: cover;
+  object-position: left;
   height: 100%;
   width: 100%;
 }
@@ -70,14 +113,13 @@ a {
   }
 }
 
-.hdrBar1 {
+.flexBar {
   position: fixed;
-  width: 10%;
-  height: 10%;
-  border-radius: 2px;
-  opacity: 0.8;
+  display: flex;
+  justify-content: space-evenly;
   top:  2.5%;
-  left:  20%;
+  left:  0;
+  right: 0;
   font-size: 24px;
 }
 

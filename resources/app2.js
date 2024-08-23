@@ -1,6 +1,7 @@
 // helper function
 
 const RADIUS = 20;
+const minWidth = 600;
 
 var col2hex = function(val) {
   var hex = Number(val).toString(16);
@@ -69,6 +70,8 @@ function boxNum() {
     return 2;
   } else  if (y > b3y[0] && y < b3y[1] && x > b3x[0] && x < b3x[1]){
     return 3;
+  } else if (y > b4y[0] && y < b4y[1] && x > b4x[0] && x < b4x[1]){
+    return 4;
   } else {
     return 0;
   }
@@ -84,17 +87,19 @@ function targetColour() {
     return b2col;
   } else  if (bNum == 3){
     return b3col;
-  } else {
+  } else  if (bNum == 4){
+    return b4col;
+  }else {
     return fc2;
   }
 }
 
 function canvasDraw() {
   // canvas of window size
-  ctx.canvas.width = window.innerWidth;
-  ctx.canvas.height = window.innerHeight;
-  xmax = window.innerWidth;
-  ymax = window.innerHeight;
+  ctx.canvas.width = document.documentElement.clientWidth;
+  ctx.canvas.height = document.documentElement.clientHeight;
+  xmax = document.documentElement.clientWidth;
+  ymax = document.documentElement.clientHeight;
 
   // picture bounding box
   picX1 = sz;
@@ -122,7 +127,7 @@ function canvasDraw() {
     while (x0 < xmax + sz) {
       // prox is a bool for close enough to the cursor
       prox = (y0 - y < dn) && (y - y0 < up) && (x0 - x < rt) && (x - x0 < lf);
-      if (prox && window.innerWidth >= 960) {
+      if (prox) {
         yup = true;
       } else {
         yup = false;
@@ -161,10 +166,12 @@ document.onmousedown = function(){
   if (bNum == 1) {
     window.location.href = 'index.html'
   } else  if (bNum == 2) {
-    window.location.href = 'page2.html'
+    window.location.href = 'science.html'
     console.log('clicked');
   } else if (bNum == 3) {
-    window.location.href = 'page3.html'
+    window.location.href = 'notscience.html'
+  } else if (bNum == 4) {
+    window.location.href = 'globalWeathering.html'
   }
 }
 
@@ -189,7 +196,7 @@ function drawRepeat() {
     // loop
     requestAnimationFrame(drawRepeat);
     // stop drawing if the window is made too small
-    if (window.innerWidth >= 960) {
+    if (xmax >= minWidth) {
       canvasDraw();
     }
 }
@@ -198,9 +205,11 @@ function drawRepeat() {
 fc1 = [245, 245, 245];
 strk = [240, 240, 240];
 fc2 = [170, 170, 170];
-b1col = [251,128,114];
+b1col = [119,51,68];
 b2col = [190,186,218];
 b3col = [141,211,199];
+b4col = [251,128,114];
+
 
 // ----------  setup of the canvas ---------------------
 var canvas = document.querySelector('canvas');
@@ -209,7 +218,7 @@ var ctx = canvas.getContext('2d');
 // outer bounds
 var xmax = document.documentElement.clientWidth;
 console.log(xmax);
-var ymax = window.document.documentElement.clientHeight;
+var ymax = document.documentElement.clientHeight;
 // start at middle middle
 var xMouse = xmax / 2; // cursor position
 var yMouse = ymax / 2; // cursor position
@@ -237,23 +246,27 @@ var dY = 0;
 const visc = 0.06;
 
 // boxes for "nav bar"
-b1x = [xmax * 0.1, xmax * 0.3];
-b1y = [0, ymax * 0.3];
-b2x = [xmax * 0.4, xmax * 0.6];
-b2y = [0, ymax * 0.3];
-b3x = [xmax * 0.7, xmax * 0.9];
-b3y = [0, ymax * 0.3];
+b1x = [xmax * 0.08, xmax * 0.23];
+b1y = [0, ymax * 0.25];
+b2x = [xmax * 0.31, xmax * 0.46];
+b2y = [0, ymax * 0.25];
+b3x = [xmax * 0.54, xmax * 0.69];
+b3y = [0, ymax * 0.25];
+b4x = [xmax * 0.77, xmax * 0.92];
+b4y = [0, ymax * 0.25];
 
 xOG = 0;
 yOG = -sz * 2 * s;
 
-canvas.width = xmax;
-canvas.height = ymax;
-if (xmax > 600) {
+// canvas.width = xmax;
+// canvas.height = ymax;
+if (xmax > minWidth) {
   canvasDraw();
   requestAnimationFrame(drawRepeat)
   document.body.style.cursor = 'none';
 } else {
   document.body.style.overflow = "scroll";
+  var para = document.getElementById("mainText");
+  para.textContent += "this website is better suited for use on desktop"
 }
 
