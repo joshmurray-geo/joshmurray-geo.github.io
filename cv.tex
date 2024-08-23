@@ -1,0 +1,246 @@
+\documentclass[letterpaper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,
+    pdfborder={1 1 1},
+    linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\normalsize{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\normalsize{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+% ---- TOP
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Joshua Murray\vspace{5pt}}} & \\
+  Massachusetts Institute of Technology (MIT) & Phone: +1 (609)356-9088 \\ 
+  77 Massachusetts Ave. 54-1124 &\\
+  Cambridge, MA &  Email: \href{mailto:}{joshmurr@mit.edu}\\ 
+  02139
+\end{tabular*}
+
+% ---- EDUCATION
+\vspace{5pt}
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Columbia University}{New York, NY}
+      {Postdoctoral Research Scientist\vspace{5pt}}{Starting Sep 2024}
+      {\scriptsize \textit{ \small{\newline{}\textbf{Lamont-Doherty Earth Observatory} ~~~Working with Prof. Peter Kelemen}}}
+    \resumeSubheading
+      {Massachusetts Institute of Technology}{Cambridge, MA}
+      {PhD\vspace{5pt}}{July 2024}
+      {\scriptsize \textit{ \small{\newline{}\textbf{Earth, Atmospheric and Planetary Sciences} ~~~Advised by Prof. Oliver Jagoutz}}}
+    \resumeSubheading
+      {Princeton University}{Princeton, NJ}
+      {A.B.\vspace{5pt}}{June 2018}
+      {\scriptsize \textit{ \small{\newline{}\textbf{Concentration in Geosciences. Certificate in Applications of Computing}}}}
+
+    \resumeSubHeadingListEnd
+
+\vspace{3pt}
+\section{~~Publications}
+  \resumeSubHeadingListStart
+    \resumeItem
+    {Sedimentary constraints on silicate weathering during the Taconic orogeny in Newfoundland}
+    {\\Joshua Murray, Oliver Jagoutz, Kristin Bergmann.~~~ \textit{In prep}}
+    \resumeItem
+    {Olivine alteration and the loss of Mars' early carbon}{\\Joshua Murray, Oliver Jagoutz.~~~ \textit{In press, Science Advances}}
+    \resumeItem
+    {\href{https://doi.org/10.1038/s41561-023-01342-9}{Palaeozoic cooling modulated by ophiolite weathering through organic carbon preservation}}{\\Joshua Murray, Oliver Jagoutz.~~~ \textit{Nature Geoscience} (2023)}
+    \resumeItem
+    {\href{https://doi.org/10.1016/j.epsl.2023.118269}{Eruption history of the Columbia River Basalt Group constrained by high-precision U-Pb and 40Ar/39Ar\\ geochronology}}{\\Jennifer Kasbohm, Blair Schoene, Darren Mark, \textbf{Joshua Murray}, Stephen Reidel, Dawid Szymanowski, Dan Barfod,\\ Tiffany Barry.~~~ \textit{Earth and Planetary Science Letters, 617, 118269} (2023)}
+\resumeSubHeadingListEnd
+
+\vspace{3pt}
+\section{~~Talks and Presentations}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Invited: Ultramafic weathering and the carbon cycle of Earth and Mars}{}
+    {Princeton University Department of Geosciences - April 2024}{} 
+    \resumeSubheading
+    {Invited: Glaciations induced by ophiolite weathering through clay formation}{}
+    {Stanford University Earth \& planetary science seminar - February 2024}{} 
+    \resumeSubheading
+    {Invited: Ophiolite obduction and clay formation as a driver of Paleozoic glaciations}{}
+    {Brown University geochemistry, mineralogy, and petrology seminar - Fall 2023}{} 
+    % \resumeSubheading
+    % {Ophiolite weathering, clay formation, and Earth's Paleozoic glaciations}{}
+    % {Bates College Department Lecture Series - Fall 2023}{} 
+    \resumeSubheading
+    {Increased organic carbon burial through ophiolite obduction}{}
+    {NSF-FRES Climate-tectonics workshop 2023 - Talk}{}  
+   \resumeSubheading
+    {A sedimentary sink for Mars' early carbon}{}
+    {AGU Fall Meeting 2022 - Talk}{}  
+  \resumeSubheading
+    {Ophiolite-derived clays enhance organic carbon burial}{}
+    {AGU Fall Meeting 2022 - Poster}{}
+  \resumeSubheading
+    {The natural levers of Earth's long-term climate}{}
+    {New England Aquarium Carlson lecture 2022 - Poster}{}
+  \resumeSubheading
+    {Silicate weathering products of mafic and ultramafic rocks as a control on steady state climate}{}
+    {AGU Fall Meeting 2021 - Talk}{}
+\resumeSubHeadingListEnd
+    
+\vspace{3pt}
+\section{~~Honours and Awards}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+    {MIT EAPS Award for Excellence in Teaching}{2021}
+    {Awarded to teaching assistants `who have met the highest levels of performace'}{}    
+   \resumeSubheading
+    {MIT Presidential Fellowship}{2018-2019}
+    {Funds tuition and living costs for the first academic year at MIT}{}    
+  \resumeSubheading
+    {William Bonini '48 Teaching Award}{2018}
+    {Awarded to Princeton Geosciences Senior for commitment to teaching}{}
+  \resumeSubheading
+    {Smith-Newton Environmental Scholar}{2016-2018}
+    {Research funding and support from the High Meadows Environmental Institute}{}  
+  \resumeSubheading
+    {Fulbright Sutton Trust US Programme}{2012-2014}
+    {Supports first-generation, low-income UK state school students in attending university in the US}{}
+    \resumeSubHeadingListEnd
+    
+\vspace{3pt}
+\section{~~Teaching Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {MIT 12.116 - Analysis of Geologic Data}{Spring 2024}
+    {TA. Lead digitization of field maps. Work through cross sections, stratigraphic columns, final report etc.}{} 
+    \resumeSubheading
+    {MIT 12.115/12.482 - Field Geology}{January 2024}
+    {TA. Organised 3-week trip to Muddy Mountains, NV. Instructed mapping techniques, paper and digital.}{} 
+    \resumeSubheading
+    {MIT 12.001 - Introduction to Geology}{Fall 2020, Fall 2022}
+    {TA. Organised Western MA trip. Led labs and some lectures. Wrote exam questions. Graded.}{} 
+    \resumeSubheading
+    {MIT 12.S597 - Seminar on Teaching in Earth Science}{January 2022}
+    {Participant in seminar on pedagogical concepts \& strategies for teaching equitably, course design, feedback.}{}
+  \resumeSubheading
+    {Princeton GEO 370 - Sedimentology}{Spring 2018}
+    {TA. Organised trip to Shark Bay, Australia. Assisted problem sets.}{} 
+  \resumeSubheading
+    {Princeton GEO 373 - Structural Geology}{Fall 2017}
+    {Field TA. Helped students with mapping and observation in Southern California.}{} 
+    \resumeSubHeadingListEnd
+
+
+\vspace{3pt}
+\section{~~Languanges and Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Coding}{MATLAB, Java, OCaml, HTML, PHP, R}
+    \resumeSubItem{Adobe}{Illustrator, Photoshop, Premiere, InDesign}
+    \resumeSubItem{Mapping}{GIS, MATLAB Mapping Toolbox, Paper \& pencil}
+    \resumeSubItem{Driving}{Automatic, Manual, Off-road}
+    \resumeSubItem{Laboratory}{Mineral separation, Petrographic microscope, Mineral dissolution}
+    \resumeSubItem{Interests}{Film photography, ultimate (frisbee), cooking and baking}
+    \resumeSubHeadingListEnd
+    
+\vspace{3pt}
+\section{~~Mentoring and Service}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Reviewer}{2024}
+    {Proceedings of the National Academy of Sciences; Journal of Geophysical Research}{}
+    \resumeSubheading
+    {COG3 Seminar Organiser}{2022-2023}
+    {One of two organisers of MIT's seminar in Chemical Oceanography, Geology, Geochemistry, and Geobiology}{}  
+    \resumeSubheading
+    {President - EAPS Student Advisory Committee (ESAC)}{~~~~~~~~~~~~~~~~~~2020-2021}
+    {Liaise with students and leadership to build meaningful community through events and dialogue}{}  
+  \resumeSubheading
+    {Mentor - Fulbright Sutton Trust US Programme Mentor}{~~~~~~~~~2019-}
+    {Mentored two first-generation British students each year through US university and financial aid apps}{}
+\resumeSubheading
+    {Assistant Coach - MIT Men's Ultimate}{~~~~~~~~~~~~~~~~~~~~2019-2024}
+    {Lead practices, logistics, and strategy over short-term (tournaments) and long-term (seasons)}{}  
+  \resumeSubheading
+    {Mathey College RCA of the Year}{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2017-2018}
+    {Acknowledged for my work building community within the residential college system}{}  
+    \resumeSubheading
+    {President - Princeton Undergraduate Geologic Society (PUGS)}{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2017-2018}
+    {Organised community building events and a 40 person department field trip  to Scotland}{}  
+\resumeSubHeadingListEnd
+
+
+\vspace{3pt}
+\section{~~Field Experience}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Isle of Arran, Scotland}{1 week, November 2013}
+    \resumeSubItem{Owens Valley, CA}{1 week, March 2015}
+    \resumeSubItem{Columbia River Basalt}{11 weeks total. Summer 2015, 2016, 2017}
+    \resumeSubItem{Orocopia Mountains, CA}{3 weeks total, October 2015, 2017}
+    \resumeSubItem{Andros Island, Bahamas}{2 weeks, March 2016}
+    \resumeSubItem{Iceland}{1 week, Summer 2016}
+    \resumeSubItem{Altiplano, Bolivia}{4 weeks, Summer 2016}
+    \resumeSubItem{Shark Bay, Australia}{2 weeks, March 2018}
+    \resumeSubItem{Western Scotland}{1 week, May 2018}
+    \resumeSubItem{Piute Mountains, CA}{3 weeks, January 2020}
+    \resumeSubItem{White Mountains, NH}{1 week, April 2021}
+    \resumeSubItem{Newfoundland, Canada}{2 weeks, November 2021}
+    \resumeSubItem{Muddy Mountains, Nevada}{3 weeks, January 2024}
+    \resumeSubHeadingListEnd
+\end{document}
