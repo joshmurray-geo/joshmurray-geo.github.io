@@ -76,10 +76,10 @@ a:link:hover {
 #mainText {
   position: fixed;
   width: 90%;
-  height: 10%;
+  height: 4%;
   border-radius: 2px;
   opacity: 0.8;
-  bottom:  2%;
+  bottom:  0%;
   left:  5%;
   font-size: 20px;
   overflow:  scroll;
@@ -102,9 +102,18 @@ a:link:hover {
   z-index: -1;
   object-fit: cover;
   position: absolute;
-  top: 5%;
+  top: 7%;
   height: 48%;
   width: 100%;
+}
+
+.hdrImg_tall {
+  object-fit: cover;
+  position: absolute;
+  top: calc(7% + 70px);
+  width: 70%;
+  aspect-ratio:  2;
+  left: 15%;
 }
 
 .hdrImg > img {
@@ -113,6 +122,26 @@ a:link:hover {
   object-position: left;
   height: 100%;
   width: 100%;
+}
+
+.hdrImg_tall > img {
+  object-fit: cover;
+  object-position: left;
+  height: 100%;
+  width: 100%;
+}
+
+.blob_short {
+  position: fixed;
+  width: 90%;
+  height: 5%;
+  border-radius: 2px;
+  opacity: 0.8;
+  bottom:  10%;
+  left:  5%;
+  font-size: 20px;
+  overflow:  visible;
+  z-index: 1;
 }
 
 @media (max-width: 960) {
@@ -130,12 +159,24 @@ a:link:hover {
   display: flex;
   justify-content: space-evenly;
   top:  3.5%;
-  left:  0;
-  right: 0;
+  left:  0%;
+  right: 0%;
   font-size: 24px;
 }
 
 
 #container {
 	position: relative;
+}
+
+* {box-sizing:border-box}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+  margin-left: auto;
+  margin-right:  auto;
+  margin-top: 0%;
+  width:  70%;
+  z-index: 500;
 }

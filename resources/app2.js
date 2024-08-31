@@ -1,7 +1,7 @@
 // helper function
 
 const RADIUS = 20;
-const minWidth = 600;
+const minWidth = 1000;
 
 var col2hex = function(val) {
   var hex = Number(val).toString(16);
@@ -96,10 +96,10 @@ function targetColour() {
 
 function canvasDraw() {
   // canvas of window size
+  xmax = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+  ymax = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
   ctx.canvas.width = document.documentElement.clientWidth;
   ctx.canvas.height = document.documentElement.clientHeight;
-  xmax = document.documentElement.clientWidth;
-  ymax = document.documentElement.clientHeight;
 
   // picture bounding box
   picX1 = sz;
@@ -216,9 +216,9 @@ var canvas = document.querySelector('canvas');
 var ctx = canvas.getContext('2d');
 
 // outer bounds
-var xmax = document.documentElement.clientWidth;
+var xmax = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 console.log(xmax);
-var ymax = document.documentElement.clientHeight;
+var ymax = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 // start at middle middle
 var xMouse = xmax / 2; // cursor position
 var yMouse = ymax / 2; // cursor position
@@ -246,13 +246,13 @@ var dY = 0;
 const visc = 0.06;
 
 // boxes for "nav bar"
-b1x = [xmax * 0.08, xmax * 0.23];
+b1x = [xmax * 0.04, xmax * 0.18];
 b1y = [0, ymax * 0.25];
-b2x = [xmax * 0.31, xmax * 0.46];
+b2x = [xmax * 0.25, xmax * 0.46];
 b2y = [0, ymax * 0.25];
-b3x = [xmax * 0.54, xmax * 0.69];
+b3x = [xmax * 0.5, xmax * 0.65];
 b3y = [0, ymax * 0.25];
-b4x = [xmax * 0.77, xmax * 0.92];
+b4x = [xmax * 0.72, xmax * 0.92];
 b4y = [0, ymax * 0.25];
 
 xOG = 0;
