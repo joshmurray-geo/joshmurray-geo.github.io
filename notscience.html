@@ -10,10 +10,9 @@
     document.body.style.cursor = 'none';
   </script> -->
 	<div id="container">
-    	  <div class="blob">
+    	  <div class="blob_short">
           <br> <br> <br> 
-          curriculum vitae <br> <br>
-          email me joshmurr[at]mit.edu
+          Click to explore some of my recent photographs. <br> <br>
   			</div>
 
     <div id = "mainText"></div>
@@ -21,7 +20,7 @@
   	<canvas width=0 height=0 style="border:1px solid #000000;">
     	Your browser does not support HTML5 canvas
   	</canvas>
-  	<script src="./resources/app2.js"></script>
+  	<script src="./resources/app_tallPic.js"></script>
   </div>
 
   <div class = "flexBar">
@@ -31,9 +30,33 @@
     <div> <a id = "weathLink" href="./globalWeathering.html">weatherability </a> </div>
   </div>
   
-  <div class = "hdrImg">
-    <img src="./resources/carlson_cropped_web3.jpg" alt="header" >
+  <div class = "hdrImg_tall" id="tallIm">
+    <img src="./resources/slide_greenhouse.jpg" onclick="changeImage()" id="clickAndChange">
   </div>
+
+  <script>
+    let imInd = 1;
+    function changeImage() {
+      console.log(imInd);
+      if (imInd == 1) {
+        document.getElementById("clickAndChange").src = "./resources/slide_capeCanal.jpg"
+        imInd = 2;
+      } else if (imInd == 2) {
+        document.getElementById("clickAndChange").src = "./resources/slide_lighthouse.jpg";
+        imInd = 3;
+      } else if (imInd == 3) {
+        document.getElementById("clickAndChange").src = "./resources/slide_muddies.jpg";
+        imInd = 4;
+      } else if (imInd == 4) {
+        document.getElementById("clickAndChange").src = "./resources/slide_scarbSpa.jpg";
+        imInd = 5;
+      } else {
+        document.getElementById("clickAndChange").src = "./resources/slide_greenhouse.jpg";
+        imInd = 1;
+      }
+
+  }
+  </script>
 
 
 </body>
