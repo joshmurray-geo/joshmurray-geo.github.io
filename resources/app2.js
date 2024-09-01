@@ -263,8 +263,9 @@ yOG = -sz * 2 * s;
 if (xmax > minWidth) {
   canvasDraw();
   requestAnimationFrame(drawRepeat)
-  document.body.style.cursor = 'none';
+  // document.body.style.cursor = url("./bsCursor.png"), auto;
 } else {
+  // document.body.style.cursor = url("./resources/bsCursor.png"), auto;
   document.body.style.overflow = "scroll";
   var para = document.getElementById("mainText");
   para.textContent += "this website is better suited for use on desktop"

@@ -13,7 +13,7 @@ span.blockspam {
 body {
 	margin: 0;
 	height: 100vh;
-  cursor: auto;
+  cursor: none;
   overflow: hidden;
 }
 
@@ -126,7 +126,7 @@ a:link:hover {
 
 .hdrImg_tall > img {
   object-fit: cover;
-  object-position: left;
+  object-position: bottom;
   height: 100%;
   width: 100%;
 }
