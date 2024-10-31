@@ -258,16 +258,18 @@ b4y = [0, ymax * 0.25];
 xOG = 0;
 yOG = -sz * 2 * s;
 
-// canvas.width = xmax;
-// canvas.height = ymax;
+canvas.width = xmax;
+canvas.height = ymax;
 if (xmax > minWidth) {
   canvasDraw();
   requestAnimationFrame(drawRepeat)
-  // document.body.style.cursor = url("./bsCursor.png"), auto;
+  document.body.style.cursor = "url('./bsCursor.png'), url(bsCursor.png), pointer";
+  console.log('updateCursor');
 } else {
-  // document.body.style.cursor = url("./resources/bsCursor.png"), auto;
+  document.body.style.cursor = "url('./bsCursor.png'), url(bsCursor.png), pointer";
   document.body.style.overflow = "scroll";
   var para = document.getElementById("mainText");
   para.textContent += "this website is better suited for use on desktop"
+  console.log('updateCursor');
 }
 

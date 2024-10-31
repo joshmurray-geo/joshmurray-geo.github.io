@@ -2,10 +2,6 @@
   font-family: Courier, Arial, sans-serif;
 }
 
-selector { 
-  cursor: none; 
-}
-
 span.blockspam {
   display: none;
 }
@@ -13,7 +9,7 @@ span.blockspam {
 body {
 	margin: 0;
 	height: 100vh;
-  cursor: none;
+  cursor: url('./bsCursor.png'), url(./bsCursor.png), pointer;
   overflow: hidden;
 }
 
@@ -43,22 +39,22 @@ a:link:hover {
 }
 
 #homeLink {
-  cursor:  none;
+  /*cursor:  none;*/
   color: #773344;
 }
 
 #sciLink {
-  cursor:  none;
+  /*cursor:  none;*/
   color: #bebada;
 }
 
 #nsLink {
-  cursor:  none;
+  /*cursor:  none;*/
   color: #8dd3c7;
 }
 
 #weathLink {
-  cursor:  none;
+  /*cursor:  none;*/
   color:  #FB8072;
 }
 
