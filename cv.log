@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.1)  31 OCT 2024 23:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.1)  1 NOV 2024 02:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **./cv.tex
 (./cv.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+L3 programming layer <2024-10-09>
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/size10.clo
@@ -81,7 +81,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitdp@description=\count269
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
+Package: hyperref 2024-10-30 v7.01k Hypertext links for LaTeX
 
 (/opt/texlive/texdir/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
@@ -143,7 +143,7 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 \Hy@pagecounter=\count273
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2024-10-30 v7.01k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -153,7 +153,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 \Hy@SavedSpaceFactor=\count274
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2024-10-30 v7.01k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -203,7 +203,7 @@ package with kernel methods
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
+File: hpdftex.def 2024-10-30 v7.01k Hyperref driver for pdfTeX
 
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
@@ -321,16 +321,16 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [3] (./cv.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-09-10>
+L3 programming layer <2024-10-09>
  ***********
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: 7FC0AD297111A0E8BDCDF2A5FDCE0382;1420.
  ) 
 Here is how much of TeX's memory you used:
- 9547 strings out of 473579
- 146265 string characters out of 5730246
- 573755 words of memory out of 5000000
- 32343 multiletter control sequences out of 15000+600000
+ 9549 strings out of 473577
+ 146301 string characters out of 5730208
+ 572787 words of memory out of 5000000
+ 32347 multiletter control sequences out of 15000+600000
  561338 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,427b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -343,7 +343,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/texlive/texdir/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/texlive/texdir/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmti9.pfb></opt/texlive/texdir/texmf-dist/fonts/t
 ype1/public/cm-super/sfrm1000.pfb>
-Output written on cv.pdf (3 pages, 144341 bytes).
+Output written on cv.pdf (3 pages, 144346 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
