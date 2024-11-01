@@ -1,6 +1,6 @@
 * {
   font-family: Courier, Arial, sans-serif;
-  cursor: url(cursor.svg) 16 16, pointer !important;
+  cursor: url(cursor_gray.svg) 16 16, pointer !important;
 }
 
 /*html {
@@ -28,7 +28,7 @@ li {
 
 canvas {
 	display: block;
-  cursor: url(cursor.svg) 16 16, pointer !important;
+  cursor: url(cursor_gray.svg) 16 16, pointer !important;
   opacity: 1;
 }
 
@@ -179,7 +179,7 @@ a:link:hover {
   left:  0%;
   right: 0%;
   font-size: 24px;
-  cursor: url(cursor.svg) 16 16, pointer !important;
+  cursor: url(cursor_gray.svg) 16 16, pointer !important;
 }
 
 
