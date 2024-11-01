@@ -263,10 +263,10 @@ canvas.height = ymax;
 if (xmax > minWidth) {
   canvasDraw();
   requestAnimationFrame(drawRepeat)
-  document.body.style.cursor = "url('./bsCursor.png'), url(bsCursor.png), pointer";
+  // document.body.style.cursor = "url(bsCursor.png), url(./cursor.svg), pointer";
   console.log('updateCursor');
 } else {
-  document.body.style.cursor = "url('./bsCursor.png'), url(bsCursor.png), pointer";
+  // document.body.style.cursor = "url(bsCursor.png), url(./cursor.svg), pointer";
   document.body.style.overflow = "scroll";
   var para = document.getElementById("mainText");
   para.textContent += "this website is better suited for use on desktop"
