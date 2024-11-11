@@ -251,13 +251,13 @@ const visc = 0.06;
 
 // boxes for "nav bar"
 b1x = [xmax * 0.04, xmax * 0.18];
-b1y = [0, ymax * 0.25];
+b1y = [0, ymax * 0.15];
 b2x = [xmax * 0.25, xmax * 0.46];
-b2y = [0, ymax * 0.25];
+b2y = [0, ymax * 0.15];
 b3x = [xmax * 0.5, xmax * 0.65];
-b3y = [0, ymax * 0.25];
+b3y = [0, ymax * 0.15];
 b4x = [xmax * 0.72, xmax * 0.92];
-b4y = [0, ymax * 0.25];
+b4y = [0, ymax * 0.15];
 
 xOG = 0;
 yOG = -sz * 2 * s;
