@@ -3,9 +3,10 @@
   cursor: url(cursor_gray.svg) 16 16, pointer !important;
 }
 
-/*html {
-  cursor: url(cursor.svg), pointer;
-}*/
+html {
+  cursor: url(cursor_gray.svg) 16 16, pointer !important;
+  overflow: hidden;
+}
 
 span.blockspam {
   display: none;
@@ -30,8 +31,7 @@ canvas {
 	display: block;
   cursor: url(cursor_gray.svg) 16 16, pointer !important;
   opacity: 1;
-  padding: 0;
-  margin: 0;
+  overflow: hidden;
 }
 
 
