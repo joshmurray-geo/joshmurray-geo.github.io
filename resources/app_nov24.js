@@ -167,7 +167,6 @@ document.onmousedown = function(){
     window.location.href = 'index.html'
   } else  if (bNum == 2) {
     window.location.href = 'science.html'
-    console.log('clicked');
   } else if (bNum == 3) {
     window.location.href = 'notscience.html'
   } else if (bNum == 4) {
@@ -221,7 +220,6 @@ var ctx = canvas.getContext('2d');
 
 // outer bounds
 var xmax = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-console.log(xmax);
 var ymax = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 // start at middle middle
 var xMouse = xmax / 2; // cursor position
@@ -267,13 +265,9 @@ canvas.height = ymax;
 if (xmax > minWidth) {
   canvasDraw();
   requestAnimationFrame(drawRepeat)
-  // document.body.style.cursor = "url(bsCursor.png), url(./cursor.svg), pointer";
-  console.log('updateCursor');
 } else {
-  // document.body.style.cursor = "url(bsCursor.png), url(./cursor.svg), pointer";
-  document.body.style.overflow = "scroll";
+  // document.body.style.overflow = "scroll";
   var para = document.getElementById("mainText");
   para.textContent += "this website is better suited for use on desktop"
-  console.log('updateCursor');
 }
 

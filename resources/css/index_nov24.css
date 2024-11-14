@@ -1,10 +1,10 @@
 * {
   font-family: Courier, Arial, sans-serif;
-  cursor: url(cursor_gray.svg) 16 16, pointer !important;
+  cursor: url(cursor_gray.svg) 16 16, auto !important;
 }
 
 html {
-  cursor: url(cursor_gray.svg) 16 16, pointer !important;
+  cursor: url(cursor_gray.svg) 16 16, auto !important;
   overflow: hidden;
 }
 
@@ -29,7 +29,7 @@ li {
 
 canvas {
 	display: block;
-  cursor: url(cursor_gray.svg) 16 16, pointer !important;
+  cursor: url(cursor_gray.svg) 16 16, auto !important;
   opacity: 1;
   overflow: hidden;
 }
@@ -64,32 +64,38 @@ a:link:hover {
 #homeLink:hover {
   background-color: transparent;
   text-decoration: underline;
+  cursor:  pointer !important;
 }
 
 #sciLink:hover {
   background-color: transparent;
   text-decoration: underline;
+  cursor:  pointer !important;
 }
 
 #nsLink:hover {
   background-color: transparent;
   text-decoration: underline;
+  cursor:  pointer !important;
 }
 
 #weathLink:hover {
   background-color: transparent;
   text-decoration: underline;
+  cursor:  pointer !important;
 }
 
 #cvLink {
   color: black;
   background-color: transparent;
+  cursor:  pointer;
 }
 
 #cvLink:hover {
   color: black;
   background-color: transparent;
   text-decoration: underline;
+  cursor:  pointer !important;
 }
 
 #mainText {
@@ -185,7 +191,7 @@ a:link:hover {
   left:  0%;
   right: 0%;
   font-size: 24px;
-  cursor: url(cursor_gray.svg) 16 16, pointer !important;
+  cursor: url(cursor_gray.svg) 16 16, auto !important;
 }
 
 
