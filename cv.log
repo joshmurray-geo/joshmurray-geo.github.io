@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.1)  4 JAN 2025 21:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.1)  5 FEB 2025 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **./cv.tex
 (./cv.tex
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-09>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/size10.clo
@@ -35,7 +35,7 @@ Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip51
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2023/10/27 v2.16 Sectioning titles
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box52
 \beforetitleunit=\skip52
 \aftertitleunit=\skip53
@@ -71,7 +71,7 @@ Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \verbatim@in@stream=\read2
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
+Package: enumitem 2025/01/19 v3.10 Customized lists
 \enitkv@toks@=\toks20
 \labelindent=\skip54
 \enit@outerparindent=\dimen147
@@ -225,17 +225,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip55
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2024/12/09 v4.5 Extensive control of page headers and footers
-
+Package: fancyhdr 2025/01/07 v5.1.1 Extensive control of page headers and foote
+rs
 \f@nch@headwidth=\skip56
-\f@nch@O@elh=\skip57
-\f@nch@O@erh=\skip58
-\f@nch@O@olh=\skip59
-\f@nch@O@orh=\skip60
-\f@nch@O@elf=\skip61
-\f@nch@O@erf=\skip62
-\f@nch@O@olf=\skip63
-\f@nch@O@orf=\skip64
+\f@nch@offset@elh=\skip57
+\f@nch@offset@erh=\skip58
+\f@nch@offset@olh=\skip59
+\f@nch@offset@orh=\skip60
+\f@nch@offset@elf=\skip61
+\f@nch@offset@erf=\skip62
+\f@nch@offset@olf=\skip63
+\f@nch@offset@orf=\skip64
+\f@nch@height=\skip65
+\f@nch@footalignment=\skip66
+\f@nch@widthL=\skip67
+\f@nch@widthC=\skip68
+\f@nch@widthR=\skip69
+\@temptokenb=\toks23
 )
 (/opt/texlive/texdir/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
@@ -274,12 +280,12 @@ LaTeX Font Info:    ... okay on input line 72.
 \scratchbox=\box55
 \nofMPsegments=\count286
 \nofMParguments=\count287
-\everyMPshowfont=\toks23
+\everyMPshowfont=\toks24
 \MPscratchCnt=\count288
 \MPscratchDim=\dimen153
 \MPnumerator=\count289
 \makeMPintoPDFobject=\count290
-\everyMPtoPDFconversion=\toks24
+\everyMPtoPDFconversion=\toks25
 )
 Package hyperref Info: Link coloring ON on input line 72.
  (./cv.out) (./cv.out)
@@ -320,20 +326,20 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 [3] (./cv.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-09>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: EA1DF6E77B3B3855C927086FA9A62E50;1197.
  ) 
 Here is how much of TeX's memory you used:
- 9596 strings out of 473254
- 147946 string characters out of 5720015
- 574851 words of memory out of 5000000
- 32703 multiletter control sequences out of 15000+600000
- 561636 words of font info for 49 fonts, out of 8000000 for 9000
+ 9680 strings out of 473201
+ 149542 string characters out of 5718191
+ 578608 words of memory out of 5000000
+ 32831 multiletter control sequences out of 15000+600000
+ 562106 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,417b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,417b,568s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></o
 pt/texlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/te
 xlive/texdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></opt/texli
@@ -342,10 +348,10 @@ exdir/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/texdir/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/texlive/texdir/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></opt/texlive/texdir/texmf-dist/
 fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on cv.pdf (3 pages, 135611 bytes).
+Output written on cv.pdf (3 pages, 136036 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  12 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
