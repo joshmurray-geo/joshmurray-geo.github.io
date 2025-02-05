@@ -129,7 +129,6 @@ INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
 INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
-INPUT /opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /opt/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT cv.aux
