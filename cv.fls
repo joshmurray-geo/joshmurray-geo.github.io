@@ -81,15 +81,9 @@ INPUT /opt/texlive/texdir/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /opt/texlive/texdir/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /opt/texlive/texdir/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /opt/texlive/texdir/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
