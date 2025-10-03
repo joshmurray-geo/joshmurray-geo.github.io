@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Joshua Murray - Photos</title>
+	<link href="./resources/css/index_nov24.css" type="text/css" rel="stylesheet">
+  <link href="favicon.png" type="image/x-icon" rel="icon">
+</head>
+<body>	
+  <script type="text/javascript">
+    document.body.style.cursor = "url(cursor_gray.svg), pointer";
+  </script>
+	<div id="container">
+    	  <div class="blob_short">
+          <br> <br> <br> 
+          Click to explore some recent photographs. All taken on a Nikon F2.<br> <br>
+  			</div>
+
+    <div id = "mainText"></div>
+
+  	<canvas width=0 height=0 style="border:1px solid #000000;">
+    	Your browser does not support HTML5 canvas
+  	</canvas>
+  	<script src="./resources/app_nov24.js"></script>
+  </div>
+
+  <div class = "flexBar">
+    <div> <a id = "homeLink" href="./index.html"> home </a> </div>
+    <div> <a id = "sciLink" href="./science.html"> science </a> </div>
+    <div> <a id = "nsLink" href="./notscience.html"> not-science </a> </div>
+    <div> <a id = "weathLink" href="./globalWeathering.html">weatherability </a> </div>
+  </div>
+  
+  <div class = "hdrImg_tall" id="tallIm">
+    <img src="./resources/slide_greenhouse.jpg" onclick="changeImage()" id="clickAndChange">
+  </div>
+
+  <script>
+    let imInd = 1;
+    function changeImage() {
+      console.log(imInd);
+      if (imInd == 1) {
+        document.getElementById("clickAndChange").src = "./resources/slide_capeCanal.jpg"
+        imInd = 2;
+      } else if (imInd == 2) {
+        document.getElementById("clickAndChange").src = "./resources/slide_lighthouse.jpg";
+        imInd = 3;
+      } else if (imInd == 3) {
+        document.getElementById("clickAndChange").src = "./resources/slide_muddies.jpg";
+        imInd = 4;
+      } else if (imInd == 4) {
+        document.getElementById("clickAndChange").src = "./resources/slide_scarbSpa.jpg";
+        imInd = 5;
+      } else {
+        document.getElementById("clickAndChange").src = "./resources/slide_greenhouse.jpg";
+        imInd = 1;
+      }
+
+  }
+  </script>
+
+
+</body>
+</html>
