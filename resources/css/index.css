@@ -93,12 +93,12 @@ a:link:hover {
 #mainText {
   position: fixed;
   width: 90%;
-  height: 4%;
+  height: 8%;
   border-radius: 2px;
   opacity: 0.8;
-  bottom:  0%;
+  bottom:  1%;
   left:  5%;
-  font-size: 20px;
+  font-size: 16px;
   overflow:  scroll;
   font-weight: bold;
 }
@@ -106,12 +106,12 @@ a:link:hover {
 .blob {
 	position: fixed;
 	width: 90%;
-  height: 40%;
+  height: 54%;
   border-radius: 2px;
   opacity: 0.8;
-  top:  55%;
+  top:  43%;
   left:  5%;
-  font-size: 20px;
+  font-size: 15px;
   overflow:  scroll;
 }
 
@@ -120,7 +120,7 @@ a:link:hover {
   object-fit: cover;
   position: absolute;
   top: 7%;
-  height: 48%;
+  height: 43%;
   width: 100%;
 }
 
@@ -154,7 +154,7 @@ a:link:hover {
   height: 5%;
   border-radius: 2px;
   opacity: 0.8;
-  bottom:  10%;
+  bottom:  20%;
   left:  5%;
   font-size: 20px;
   overflow:  visible;
