@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery</title>
+  <style>
+    body {
+      margin: 20px;
+      font-family: sans-serif;
+      background: #fff;
+      color: #111;
+    }
+
+    h1 {
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Masonry-style gallery */
+    .gallery {
+      column-count: 3;   /* always 3 columns */
+      column-gap: 40px;  /* space between columns */
+      padding: 20px 80px;
+    }
+
+    .gallery img {
+      width: 100%;
+      display: block;
+      margin-bottom: 40px;
+      cursor: pointer;
+    }
+
+    /* Lightbox overlay */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #lightbox img {
+      max-width: 95%;
+      max-height: 95%;
+    }
+
+    .flexBar {
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+      top:  15px;
+      left:  0%;
+      right: 0%;
+      font-size: 24px;
+      cursor: url(cursor_gray.svg) 16 16, pointer !important;
+    }
+
+    a {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:link:hover {
+      text-decoration: none;
+    }
+
+    #homeLink {
+      color: #773344;
+    }
+
+    #sciLink {
+      color: #bebada;
+    }
+
+    #nsLink {
+      color: #8dd3c7;
+    }
+
+    #weathLink {
+      color:  #FB8072;
+    }
+
+    #homeLink:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    #sciLink:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    #nsLink:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    #weathLink:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    #cvLink {
+      color: black;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class = "flexBar">
+    <div> <a id = "homeLink" href="./index.html"> home </a> </div>
+    <div> <a id = "sciLink" href="./science.html"> science </a> </div>
+    <div> <a id = "nsLink" href="./notscience.html"> not-science </a> </div>
+    <div> <a id = "weathLink" href="./globalWeathering.html">weatherability </a> </div>
+  </div>
+
+  <p><br><br>Some recent photos taken on a Nikon F2.</p>
+  <div class="gallery">
+    <!-- Replace these with your own images -->
+    <img src="resources/pic_cloisters.jpg" alt="Photo 1">
+    <img src="resources/pic_church.jpg" alt="Photo 2">
+    <img src="resources/pic_greenhouse.jpg" alt="Photo 3">
+    <img src="resources/pic_capeFishing.jpg" alt="Photo 4">
+    <img src="resources/pic_dogPark.jpg" alt="Photo 5">
+    <img src="resources/pic_kite.jpg" alt="Photo 6">
+    <img src="resources/pic_tree.jpg" alt="Photo 7">
+    <img src="resources/pic_sboro.jpg" alt="Photo 8">
+    <img src="resources/pic_mitCourtyard.jpg" alt="Photo 9">
+    <img src="resources/pic_houses.jpg" alt="Photo 10">
+    <img src="resources/pic_greenhouse2.jpg" alt="Photo 11">
+    <img src="resources/pic_bench.jpg" alt="Photo 12">
+    <img src="resources/pic_dogWalk.jpg" alt="Photo 13">
+    <img src="resources/pic_pier.jpg" alt="Photo 14">
+    <img src="resources/pic_plantHouse.jpg" alt="Photo 15">
+    <img src="resources/pic_rosebud.jpg" alt="Photo 16">
+    <img src="resources/pic_teleLine.jpg" alt="Photo 17">
+    <img src="resources/pic_beachFootball.jpg" alt="Photo 18">
+    <img src="resources/pic_usps.jpg" alt="Photo 19">
+    <img src="resources/pic_vent.jpg" alt="Photo 20">
+    <img src="resources/pic_wheels.jpg" alt="Photo 21">
+    <img src="resources/pic_window.jpg" alt="Photo 22">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Enlarged photo">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    }
+  </script>
+</body>
+</html>
