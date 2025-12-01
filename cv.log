@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.2)  7 NOV 2025 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.2)  1 DEC 2025 01:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,7 +337,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/texlive/texdir/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></opt/texlive/texdir/texmf-dist/
 fonts/type1/public/cm-super/sfrm1000.pfb></opt/texlive/texdir/texmf-dist/fonts/
 type1/public/cm-super/sfti1000.pfb>
-Output written on cv.pdf (3 pages, 139475 bytes).
+Output written on cv.pdf (3 pages, 139490 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream
